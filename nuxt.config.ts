@@ -18,6 +18,7 @@ export default defineNuxtConfig({
             'An evidence-based guide to medium-chain acyl-CoA dehydrogenase deficiency (MCADD): understanding the disease, diagnosis, daily management, emergencies, and the latest research.',
         },
         { name: 'theme-color', content: '#0f766e' },
+        { name: 'google-site-verification', content: 'eKKVOix-9e7mlubFa8RyXHe3v3MPgWvSjqEir9_8tYo' },
       ],
       link: [{ rel: 'icon', type: 'image/svg+xml', href: `${baseURL}favicon.svg` }],
     },
