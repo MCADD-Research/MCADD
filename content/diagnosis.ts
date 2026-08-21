@@ -24,7 +24,7 @@ export const diagnosis: Topic = {
         },
         {
           type: 'p',
-          text: 'Newborn screening for MCADD has been implemented in many countries, including the United States (expanded to all states), the Netherlands, Denmark, Germany, Austria, and others. The specific start dates vary by country and state.',
+          text: 'Newborn screening for MCADD has been implemented in many countries, including the United States (expanded to all states), the Netherlands, Denmark, Germany, Austria, and others. The specific start dates vary by country and state. Orphanet notes that MCADD is included in newborn screening programs in many European countries, including the United Kingdom, Germany, the Netherlands, Portugal, and Spain.',
         },
       ],
       category: ['ESTABLISHED FACT'],
@@ -50,6 +50,10 @@ export const diagnosis: Topic = {
           text: 'Jager EA, et al. "A nationwide retrospective observational study of population newborn screening for MCAD deficiency in the Netherlands." J Inherit Metab Dis. 2019;42:890-7.',
           url: 'https://pubmed.ncbi.nlm.nih.gov/31012112',
           pmid: '31012112',
+        },
+        {
+          text: 'Orphanet. "Medium-chain acyl-CoA dehydrogenase deficiency." ORPHA:42.',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
         },
       ],
     },
@@ -141,10 +145,34 @@ export const diagnosis: Topic = {
           text: 'Specific cutoff values vary by screening program and are not standardized internationally. Each newborn screening program establishes its own cutoffs based on local population data and analytical methods.',
         },
         {
-          type: 'callout',
-          variant: 'insufficient',
-          title: 'Insufficiently documented',
-          text: 'The exact C8 cutoff values for each specific newborn screening program could not be verified in this research pass. These values vary by program and should be obtained directly from the relevant screening authority.',
+          type: 'p',
+          text: 'Aggregate 99th centile values from North American newborn screening samples (Collaborative Laboratory Integrated Reports) are:',
+        },
+        {
+          type: 'ul',
+          items: [
+            'C8: 2.46 nmol/mL',
+            'C6: 2.44 nmol/mL',
+            'C10: 2.38 nmol/mL',
+            'C10:1: 2.44 nmol/mL',
+            'C8/C2 ratio: 2.43',
+            'C8/C10 ratio: 2.53',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Note: 1 nmol/mL is equivalent to 1 µmol/L. Because of differences in sample analysis, aggregate C8 values may not be directly comparable to local program results; each program\u2019s own cutoffs should be used.',
+        },
+        {
+          type: 'p',
+          text: 'Genotype-stratified C8 values (observational data):',
+        },
+        {
+          type: 'ul',
+          items: [
+            'In a retrospective cohort of 90 patients, individuals homozygous for c.985A>G (p.Lys329Glu) had higher NBS C8 (23.4 ± 19.6 vs 6.6 ± 3.0 µmol/L) than those with at least one other pathogenic variant (Anderson et al 2020).',
+            'In a US cohort of 221 newborn-screened neonates, the average C8 on the first screen was 11.2 µmol/L (median 8.6, range 0.36–43.91); higher C8 correlated with symptomatic newborns, and C8 and genotype were significant predictors of neonatal symptoms (Bentler et al 2016).',
+          ],
         },
       ],
       category: ['ESTABLISHED FACT'],
@@ -164,6 +192,16 @@ export const diagnosis: Topic = {
           text: 'Maier EM, et al. "Validation of MCADD newborn screening." Clin Genet. 2009;76:179-87.',
           url: 'https://pubmed.ncbi.nlm.nih.gov/19780764',
           pmid: '19780764',
+        },
+        {
+          text: 'Anderson DR, et al. "Clinical and biochemical outcomes of patients with medium-chain acyl-CoA dehydrogenase deficiency." Mol Genet Metab. 2020;129:13-19.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/31836396',
+          pmid: '31836396',
+        },
+        {
+          text: 'Bentler K, et al. "221 newborn-screened neonates with medium-chain acyl-coenzyme A dehydrogenase deficiency: Findings from the Inborn Errors of Metabolism Collaborative." Mol Genet Metab. 2016;119:75-82.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/27477829',
+          pmid: '27477829',
         },
       ],
     },
@@ -257,6 +295,7 @@ export const diagnosis: Topic = {
           type: 'ul',
           items: [
             'Maternal MCADD (if the mother has undiagnosed MCADD, her acylcarnitines can elevate the newborn\u2019s result).',
+            'Heterozygous ACADM c.985A>G (p.Lys329Glu) carriers — term, appropriate-for-gestational-age infants heterozygous for the common pathogenic variant can have C8 levels above the 90th centile (Blois et al 2005).',
             'Other conditions causing elevated C8 (e.g., carnitine palmitoyltransferase I deficiency, medium-chain triglyceride supplementation).',
             'Prematurity or low birth weight.',
             'Technical/analytical issues.',
@@ -264,7 +303,7 @@ export const diagnosis: Topic = {
         },
         {
           type: 'p',
-          text: 'Second-tier testing (e.g., molecular testing, additional acylcarnitine ratios) helps reduce false positives.',
+          text: 'False positives for elevated C8 are not common with MS/MS, but can be seen in term heterozygous carriers and premature infants. Second-tier testing (e.g., molecular testing, additional acylcarnitine ratios) helps reduce false positives.',
         },
       ],
       category: ['OBSERVATIONAL DATA'],
@@ -275,6 +314,10 @@ export const diagnosis: Topic = {
           text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
           pmid: '20301597',
+        },
+        {
+          text: 'Blois B, Riddell C, Dooley K, Dyack S. "Newborns with C8-acylcarnitine level over the 90th centile have an increased frequency of the common MCAD 985A>G mutation." J Inherit Metab Dis. 2005.',
+          pmid: '15902558',
         },
         {
           text: 'Leydiker KB, et al. "Maternal medium-chain acyl-CoA dehydrogenase deficiency identified by newborn screening." Mol Genet Metab. 2011;103:92-5.',
@@ -303,6 +346,7 @@ export const diagnosis: Topic = {
             'MCADD with severe neonatal onset and normal acylcarnitine profile at the time of screening.',
             'ACADM splice mutations missed by newborn screening.',
             'Rare genotypes not producing elevated C8 in the early newborn period.',
+            'Low free carnitine levels — newborns with low free carnitine (e.g., infants born to a mother with previously undiagnosed MCAD deficiency, maternal carnitine transporter deficiency, or nutritional carnitine deficiency) can have lower elevations of C8/C6/C10 acylcarnitines, or even normal profiles, leading to false negatives (Leydiker et al 2011; Aksglaede et al 2015; Weiss et al 2023).',
           ],
         },
         {
@@ -326,6 +370,18 @@ export const diagnosis: Topic = {
           text: 'M\u00fctze U, et al. "Sudden neonatal death in individuals with medium-chain acyl-coenzyme A dehydrogenase deficiency: limit of newborn screening." Eur J Pediatr. 2022;181:2415-22.',
           url: 'https://pubmed.ncbi.nlm.nih.gov/35294644',
           pmid: '35294644',
+        },
+        {
+          text: 'Leydiker KB, et al. "Maternal medium-chain acyl-CoA dehydrogenase deficiency identified by newborn screening." Mol Genet Metab. 2011;103:92-5.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/21354840',
+          pmid: '21354840',
+        },
+        {
+          text: 'Aksglaede L, et al. "Abnormal newborn screening in a healthy infant of a mother with undiagnosed MCADD." JIMD Rep. 2015;23:67-70.',
+          pmid: '25763512',
+        },
+        {
+          text: 'Weiss et al. "Free carnitine concentrations and biochemical parameters in medium-chain acyl-CoA dehydrogenase deficiency." Clin Genet. 2023. (Cited in GeneReviews as Weiss et al 2023)',
         },
       ],
     },
@@ -385,6 +441,7 @@ export const diagnosis: Topic = {
             'C8 levels can vary with age, feeding status, and clinical condition.',
             'The acylcarnitine profile during an acute metabolic crisis may differ significantly from the well state.',
             'Residual enzyme activity varies by genotype and may influence biochemical phenotype.',
+            'C8 level and genotype are significant predictors of neonatal symptoms in newborn-screened cohorts; individuals homozygous for the common c.985A>G (p.Lys329Glu) variant have the highest C8 values and are most likely to have neonatal symptoms (Bentler et al 2016; Anderson et al 2020).',
             'Some infants identified by newborn screening may have biochemical evidence of MCADD but never develop symptoms.',
           ],
         },
@@ -413,6 +470,16 @@ export const diagnosis: Topic = {
           text: 'Maier EM, et al. "Population spectrum of ACADM genotypes correlated to biochemical phenotypes in newborn screening." Hum Mutat. 2005;25:443-52.',
           url: 'https://pubmed.ncbi.nlm.nih.gov/15832312',
           pmid: '15832312',
+        },
+        {
+          text: 'Bentler K, et al. "221 newborn-screened neonates with medium-chain acyl-coenzyme A dehydrogenase deficiency: Findings from the Inborn Errors of Metabolism Collaborative." Mol Genet Metab. 2016;119:75-82.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/27477829',
+          pmid: '27477829',
+        },
+        {
+          text: 'Anderson DR, et al. "Clinical and biochemical outcomes of patients with medium-chain acyl-CoA dehydrogenase deficiency." Mol Genet Metab. 2020;129:13-19.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/31836396',
+          pmid: '31836396',
         },
       ],
     },

@@ -1,7 +1,6 @@
 export const site = {
-  name: 'MCADD Compass',
-  tagline: 'Easy to understand, never simplistic.',
-  siteUrl: 'https://mcadd-compass.github.io',
+  name: 'MCADD',
+  siteUrl: 'https://mcadd-research.github.io/MCADD',
   description:
     'An evidence-based guide to medium-chain acyl-CoA dehydrogenase deficiency (MCADD): understanding the disease, diagnosis, daily management, emergencies, and the latest research.',
   contentLastVerified: '2026-08-21',
@@ -12,7 +11,7 @@ export const site = {
 export const disclaimer = {
   heading: 'Medical disclaimer',
   body: [
-    'MCADD Compass is an informational resource built from a validated knowledge base of established medical sources. It is not medical advice, and it is not a substitute for the care of a physician or a specialist metabolic team.',
+    'This site is an informational resource built from a validated knowledge base of established medical sources. It is not medical advice, and it is not a substitute for the care of a physician or a specialist metabolic team.',
     'The information here cannot diagnose, treat, or make decisions about your individual care. Always consult your own metabolic specialist before making changes to diet, fasting schedules, or emergency plans.',
     'In an emergency, call your local emergency number immediately rather than relying on this website.',
   ],

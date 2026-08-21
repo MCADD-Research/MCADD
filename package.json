@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "1.0.0",
-  "description": "MCADD Compass — an evidence-based guide to medium-chain acyl-CoA dehydrogenase deficiency.",
+  "description": "MCADD — an evidence-based guide to medium-chain acyl-CoA dehydrogenase deficiency.",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",

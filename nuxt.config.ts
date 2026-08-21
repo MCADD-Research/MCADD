@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     baseURL,
     head: {
       htmlAttrs: { lang: 'en' },
-      title: 'MCADD Compass',
+      title: 'MCADD',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -37,7 +37,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: process.env.NUXT_SITE_URL || 'https://mcadd-compass.github.io',
+    url: process.env.NUXT_SITE_URL || 'https://mcadd-research.github.io',
   },
 
   sitemap: {

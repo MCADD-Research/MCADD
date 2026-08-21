@@ -85,6 +85,23 @@ export const trials: Trial[] = [
     url: 'https://clinicaltrials.gov/study/NCT06773026',
   },
   {
+    id: 'DRKS00032765',
+    name: 'Health-Related Quality of Life in Children and Adolescents With MCADD',
+    officialTitle:
+      'Health-related quality of life in children and adolescents with Medium-chain-acyl-CoA dehydrogenase deficiency (MCADD)',
+    intervention: 'KINDL quality-of-life questionnaire + retrospective data analysis (observational)',
+    phase: 'N/A',
+    population: '0–18 years, MCADD diagnosed by newborn screening (n=25)',
+    countries: 'Germany',
+    sites: 'Not stated',
+    status: 'RECRUITING',
+    lastRegistryUpdate: '2025-04-07',
+    primaryEndpoints: 'Health-related quality of life (KINDL questionnaire)',
+    enrollment: '25',
+    url: 'https://trialsearch.who.int/',
+    note: 'Source: WHO ICTRP (German Clinical Trials Register / DRKS). NOT listed on ClinicalTrials.gov.',
+  },
+  {
     id: 'NCT06069375',
     name: 'Sodium Phenylbutyrate (ACER-001) for MCADD (K304E)',
     officialTitle:
@@ -129,6 +146,23 @@ export const trials: Trial[] = [
     primaryEndpoints: 'Not specified in registry summary',
     enrollment: 'Not specified',
     url: 'https://clinicaltrials.gov/study/NCT06796530',
+  },
+  {
+    id: 'ISRCTN14321657',
+    name: 'MRS Analysis of Muscle Energy Metabolism in MCAD Deficiency',
+    officialTitle:
+      'Magnetic Resonance Spectroscopy (MRS)-analysis of muscle energy metabolism in medium-chain acyl-CoA dehydrogenase (MCAD) deficiency',
+    intervention: 'Incremental exercise test + 1H/31P-MRS during exercise',
+    phase: 'N/A',
+    population: 'Adults >18 years with MCAD deficiency + matched healthy controls (n=16)',
+    countries: 'Netherlands',
+    sites: 'Not stated',
+    status: 'COMPLETED',
+    lastRegistryUpdate: '2015-01-13',
+    primaryEndpoints: 'Muscle energy metabolism (1H/31P-MRS during exercise)',
+    enrollment: '16',
+    url: 'https://trialsearch.who.int/',
+    note: 'Source: WHO ICTRP (ISRCTN). NOT listed on ClinicalTrials.gov.',
   },
   {
     id: 'NCT06067802',
@@ -177,7 +211,7 @@ export const trials: Trial[] = [
     primaryEndpoints: 'Change in blood glucose, plasma free fatty acid concentrations, heart rate',
     enrollment: '20',
     url: 'https://clinicaltrials.gov/study/NCT03761693',
-    note: 'Status UNKNOWN — this study has not been updated since 2019-05-14. Current status cannot be determined. Do not assume the study is active or recruiting.',
+    note: 'Status UNKNOWN — this study has not been updated since 2019-05-14. Current status cannot be determined. Do not assume the study is active or recruiting. Registry discrepancy: WHO ICTRP last listed this study as "Recruiting", whereas ClinicalTrials.gov lists the status as "Unknown"; the ICTRP record is stale.',
   },
 ]
 
@@ -378,4 +412,4 @@ export const recentResearch: ResearchGroup[] = [
 ]
 
 export const registriesNote =
-  'EU CTIS and WHO ICTRP could not be searched in this research pass due to access limitations (CAPTCHA/bot detection). These registries should be searched in a future update to ensure completeness.'
+  'Registry coverage: EU CTIS was searched and contains 0 MCADD-specific trials. WHO ICTRP was searched and surfaced 10 MCADD-specific trials, including two not listed on ClinicalTrials.gov (DRKS00032765 and ISRCTN14321657). WHO ICTRP is an aggregator of registry snapshots, and some records are stale — always confirm current status at the primary registry (ClinicalTrials.gov / DRKS / ISRCTN).'

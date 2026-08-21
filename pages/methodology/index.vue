@@ -18,7 +18,7 @@ import { site } from '~/content/site'
 usePageSeo({
   title: 'Methodology',
   description:
-    'How the MCADD Compass content is researched, verified, and classified — evidence levels, source hierarchy, and limitations.',
+    'How the MCADD content is researched, verified, and classified — evidence levels, source hierarchy, and limitations.',
 })
 </script>
 
@@ -26,7 +26,7 @@ usePageSeo({
   <div class="container">
     <PageHero
       title="How this content is made"
-      description="MCADD Compass is built from a validated knowledge base. This page explains the evidence levels, source hierarchy, validation process, and the limitations you should know about."
+      description="This guide is built from a validated knowledge base. This page explains the evidence levels, source hierarchy, validation process, and the limitations you should know about."
     />
 
     <div class="method-grid">

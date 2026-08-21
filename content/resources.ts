@@ -28,10 +28,10 @@ export const authoritativeSources: ResourceLink[] = [
   },
   {
     name: 'Orphanet — MCADD',
-    description: 'A European rare-disease reference. Not accessible during the research pass used to build this site.',
-    url: 'https://www.orpha.net/en/disease/734',
-    available: false,
-    note: 'Blocked by CAPTCHA/bot detection during verification.',
+    description:
+      'A European rare-disease reference (ORPHA:42). A Tier A authoritative source for prevalence, clinical description, and the MCT-avoidance recommendation.',
+    url: 'https://www.orpha.net/fr/disease/detail/42',
+    available: true,
   },
   {
     name: 'CDC — Newborn screening (MCAD)',
@@ -52,17 +52,16 @@ export const trialRegistries: ResourceLink[] = [
   },
   {
     name: 'EU Clinical Trials Information System (CTIS)',
-    description: 'The European Union clinical trials registry. Not searched during the research pass used to build this site.',
-    url: 'https://euclinicaltrials.eu/',
-    available: false,
-    note: 'Access limitation at the time of verification.',
+    description: 'The European Union clinical trials registry. Searched during verification: 0 MCADD-specific trials were found.',
+    url: 'https://euclinicaltrials.eu/ctis-public/search',
+    available: true,
   },
   {
     name: 'WHO International Clinical Trials Registry Platform (ICTRP)',
-    description: 'The World Health Organization trials registry platform. Not searched during the research pass used to build this site.',
-    url: 'https://www.who.int/clinical-trials-registry',
-    available: false,
-    note: 'Access limitation at the time of verification.',
+    description:
+      'The World Health Organization trials registry platform. Searched during verification: 10 MCADD-specific trials, including 2 not on ClinicalTrials.gov.',
+    url: 'https://trialsearch.who.int/',
+    available: true,
   },
 ]
 

@@ -26,6 +26,10 @@ export const understanding: Topic = {
           type: 'p',
           text: 'The condition is caused by deficiency of the medium-chain acyl-CoA dehydrogenase (MCAD) enzyme, which is essential for fatty acid β-oxidation.',
         },
+        {
+          type: 'p',
+          text: 'MCADD is the most common inherited fatty-acid β-oxidation disorder (GeneReviews, 2024). Orphanet (ORPHA:42), an authoritative rare-disease reference, defines it as an inherited disorder of mitochondrial fatty-acid oxidation of medium-chain fatty acids, characterized by rapidly progressive metabolic crises that often present with hypoketotic hypoglycemia, lethargy, vomiting, seizures, and coma — potentially fatal without urgent medical intervention.',
+        },
       ],
       category: ['ESTABLISHED FACT'],
       evidence: { level: 'A' },
@@ -39,6 +43,10 @@ export const understanding: Topic = {
           text: 'Chang IJ, Lam C, Vockley J. "Medium-Chain Acyl-Coenzyme A Dehydrogenase Deficiency." GeneReviews®. 2000 Apr 20 [updated 2024 Sep 26].',
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
           pmid: '20301597',
+        },
+        {
+          text: 'Orphanet. "Déficit en acyl-CoA déshydrogénase des acides gras à chaîne moyenne." ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
         },
       ],
     },
@@ -55,6 +63,24 @@ export const understanding: Topic = {
         {
           type: 'p',
           text: 'The most common mutation replaces the amino acid lysine with glutamic acid at position 304 in the enzyme (written as Lys304Glu or K304E). This mutation, also known as c.985A>G, is subject to a strong founder effect from northwestern Europe.',
+        },
+        {
+          type: 'callout',
+          variant: 'info',
+          title: 'Nomenclature note',
+          text: 'Current HGVS nomenclature designates this same substitution as p.Lys329Glu (K329E), numbered from the first residue of the pro-protein. "p.Lys304Glu (K304E)" is the older (mature-protein) designation of the identical c.985A>G variant (GeneReviews, 2024; Orphanet).',
+        },
+        {
+          type: 'p',
+          text: 'Additional findings:',
+        },
+        {
+          type: 'ul',
+          items: [
+            'The common c.985A>G (p.Lys329Glu / K329E) mutation accounted for about 80% of cases before the implementation of newborn screening; many patients are now identified with other ACADM mutations (Orphanet, ORPHA:42).',
+            'This variant accounts for between 56% and 91% of MCAD deficiency-causing alleles across studied populations (GeneReviews).',
+            'A distinct founder variant, the ACADM c.449_452delCTGA deletion, is more prevalent in Asian (Taiwanese, Japanese, and Korean) populations (GeneReviews, 2024).',
+          ],
         },
         {
           type: 'p',
@@ -79,6 +105,10 @@ export const understanding: Topic = {
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
           pmid: '20301597',
         },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
       ],
     },
     {
@@ -90,6 +120,10 @@ export const understanding: Topic = {
         {
           type: 'p',
           text: 'MCADD is inherited in an autosomal recessive pattern. Both copies of the gene in each cell have mutations. Parents of an affected individual each carry one copy of the mutated gene but typically do not show signs or symptoms of the condition.',
+        },
+        {
+          type: 'p',
+          text: 'Orphanet (ORPHA:42) independently confirms autosomal recessive transmission, and GeneReviews notes that heterozygotes (carriers) are asymptomatic. The carrier frequency for the common c.985A>G (p.Lys329Glu) variant is between 1:40 and 1:100 in those of northern European ancestry (GeneReviews, 2024).',
         },
       ],
       category: ['ESTABLISHED FACT'],
@@ -104,6 +138,10 @@ export const understanding: Topic = {
           text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
           pmid: '20301597',
+        },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
         },
       ],
     },
@@ -206,23 +244,36 @@ export const understanding: Topic = {
       slug: 'ketogenesis',
       title: 'Ketogenesis (why ketones stay low)',
       summary:
-        'People with MCADD tend to have unusually low ketone bodies during a crisis. This is a distinctive feature, but the precise biochemistry is still being verified.',
+        'People with MCADD tend to have unusually low ketone bodies during a crisis — a distinctive feature called "hypoketotic" hypoglycemia. Ketones are not completely absent, however, and a few people even show "paradoxical" ketosis.',
       body: [
         {
-          type: 'callout',
-          variant: 'insufficient',
-          title: 'Insufficiently documented',
-          text: 'The specific mechanisms by which MCADD impairs ketogenesis have not been fully verified from primary sources in this research pass. GeneReviews indicates that ketone body production is impaired, but the exact biochemical mechanisms require further source verification.',
+          type: 'p',
+          text: 'Because fatty-acid β-oxidation fuels hepatic ketogenesis (the production of ketone bodies, a major energy source for peripheral tissues once glycogen stores are depleted), MCAD deficiency impairs ketone body production. This produces the characteristic "hypoketotic" hypoglycemia of MCADD — low blood glucose accompanied by inappropriately low ketone bodies.',
+        },
+        {
+          type: 'p',
+          text: 'Importantly, the ketosis in MCADD is "hypoketotic" rather than "nonketotic": ketone bodies can still be produced during acute metabolic decompensation via long-chain fatty acid oxidation, which uses different enzymes (GeneReviews, 2024). This explains two Orphanet-documented clinical observations:',
+        },
+        {
+          type: 'ul',
+          items: [
+            'Some patients develop a progressive metabolic crisis despite normal ketosis and normal glycemia.',
+            'A minority develop crises with marked "paradoxical" ketosis.',
+          ],
         },
       ],
-      category: ['SCIENTIFIC HYPOTHESIS'],
-      evidence: { level: 'X' },
+      category: ['ESTABLISHED FACT'],
+      evidence: { level: 'A' },
       lastVerified: '2026-08-21',
       sources: [
         {
-          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024]. (General reference — specific ketogenesis details require further verification.)',
+          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
           pmid: '20301597',
+        },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
         },
       ],
     },
@@ -240,6 +291,18 @@ export const understanding: Topic = {
           type: 'p',
           text: 'Other elevated acylcarnitines include C6 (hexanoylcarnitine) and C10 (decanoylcarnitine), though C8 is the most specific and sensitive marker.',
         },
+        {
+          type: 'p',
+          text: 'Additional biomarker details (GeneReviews, 2024; Orphanet, ORPHA:42):',
+        },
+        {
+          type: 'ul',
+          items: [
+            'C8 elevation is typically accompanied by lesser elevations of C6, C10, and C10:1 acylcarnitines.',
+            'Elevated C8/C2 and C8/C10 ratios are diagnostically useful secondary markers; Orphanet specifically highlights the elevated C8/C10 ratio.',
+            'Genotype influences C8 level: individuals homozygous for c.985A>G (p.Lys329Glu) have the highest C8 values — a mean NBS C8 of 23.4 vs 6.6 µmol/L in compound heterozygotes (Anderson et al 2020).',
+          ],
+        },
       ],
       category: ['ESTABLISHED FACT'],
       evidence: { level: 'B' },
@@ -256,6 +319,15 @@ export const understanding: Topic = {
         {
           text: 'Hsu HW, et al. "Spectrum of medium-chain acyl-CoA dehydrogenase deficiency detected by newborn screening." Pediatrics. 2008;121(5):e1108-14.',
           pmid: '18450854',
+        },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
+        {
+          text: 'Anderson DR, et al. "Clinical and biochemical outcomes of patients with medium-chain acyl-CoA dehydrogenase deficiency." Mol Genet Metab. 2020;129:13-9.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/31836396',
+          pmid: '31836396',
         },
       ],
     },
@@ -317,11 +389,16 @@ export const understanding: Topic = {
             'Prolonged exercise — increases energy demand.',
             'Surgery — fasting before/after surgery and metabolic stress.',
             'Vomiting/diarrhea — reduces caloric intake and causes dehydration.',
+            'Alcohol — particularly acute alcohol intoxication (binge drinking), which often elicits metabolic decompensation (GeneReviews, 2024; Lang 2009; Orphanet).',
           ],
         },
         {
           type: 'p',
           text: 'The disorder is sometimes mistaken for Reye syndrome, a severe disorder that may develop in children during apparent recovery from viral infections (associated with aspirin use).',
+        },
+        {
+          type: 'p',
+          text: 'Orphanet (ORPHA:42) lists infection, fasting, and surgery as the typical precipitants of hypoketotic hypoglycemia, lethargy, and vomiting.',
         },
       ],
       category: ['ESTABLISHED FACT'],
@@ -341,17 +418,45 @@ export const understanding: Topic = {
           text: 'Iafolla AK, et al. "Medium-chain acyl-coenzyme A dehydrogenase deficiency: clinical course in 120 affected children." J Pediatr. 1994;124:409-15.',
           pmid: '8120710',
         },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
+        {
+          text: 'Lang TF. "Adult presentations of medium-chain acyl-CoA dehydrogenase deficiency (MCADD)." J Inherit Metab Dis. 2009;32:675-83.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/19821147',
+          pmid: '19821147',
+        },
       ],
     },
     {
       slug: 'prevalence',
       title: 'How common is MCADD?',
       summary:
-        'In the United States, about 1 in 17,000 people is affected. It is more common in people of northern European ancestry.',
+        'MCADD affects roughly 1 in 14,000 to 1 in 17,000 newborns worldwide. It is more common in people of northern European ancestry, and rates vary considerably by region and population.',
       body: [
         {
           type: 'p',
-          text: 'In the United States, the estimated incidence of MCADD is 1 in 17,000. The condition is more common in people of northern European ancestry than in other ethnic groups.',
+          text: 'In the United States, the estimated incidence of MCADD is about 1 in 17,000 newborns. The condition is more common in people of northern European ancestry than in other ethnic groups.',
+        },
+        {
+          type: 'p',
+          text: 'Additional prevalence data from newer sources:',
+        },
+        {
+          type: 'ul',
+          items: [
+            'Worldwide birth prevalence: 1/14,600 (Orphanet, ORPHA:42).',
+            'Caucasian birth prevalence: 1/4,900 to 1/27,000, higher in individuals of Northern European descent (Orphanet, ORPHA:42).',
+            'Point prevalence: 1–9 per 100,000 (Orphanet, ORPHA:42).',
+            'United States: 1/17,759 newborns (GeneReviews); one study reports Utah at 1/9,266 — more frequent than the US average (Anderson 2020).',
+            'Overall: 5.3 per 100,000 births (range 4.1–6.7) across a variety of populations (GeneReviews).',
+            'Carrier frequency of c.985A>G (p.Lys329Glu): 1:40 to 1:100 in those of northern European ancestry (GeneReviews).',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Regional variation is wide (GeneReviews): Europe ranges from 1:4,900 (northern Germany) to 1:24,900 (Austria); Asia from 1:18,000 (Saudi Arabia) to 1:263,500 (Taiwan); Australia 1:19,000 (New South Wales); and North America 1:13,000–1:23,400 across regions.',
         },
       ],
       category: ['ESTABLISHED FACT'],
@@ -366,6 +471,20 @@ export const understanding: Topic = {
           text: 'Grosse SD, et al. "The epidemiology of medium chain acyl-CoA dehydrogenase deficiency: an update." Genet Med. 2006;8(4):205-12.',
           url: 'https://pubmed.ncbi.nlm.nih.gov/16617240',
           pmid: '16617240',
+        },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
+        {
+          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
+          url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
+          pmid: '20301597',
+        },
+        {
+          text: 'Anderson DR, et al. "Clinical and biochemical outcomes of patients with medium-chain acyl-CoA dehydrogenase deficiency." Mol Genet Metab. 2020;129:13-9.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/31836396',
+          pmid: '31836396',
         },
       ],
     },
@@ -386,10 +505,11 @@ export const understanding: Topic = {
         {
           type: 'ul',
           items: [
-            'Some studies suggest that residual enzyme activity may predict clinical severity.',
-            'The K304E/K304E genotype is associated with severe enzyme deficiency but not all individuals with this genotype are symptomatic.',
-            'Some individuals with disease-causing genotypes identified by newborn screening remain asymptomatic.',
-            'Environmental factors (fasting, illness) appear to play a significant role in determining clinical expression.',
+            'Residual enzyme activity is a better predictor than genotype alone. In a Dutch NBS cohort (Touw 2012), subjects with variant ACADM genotypes and residual MCAD enzyme activity <10% should be considered to have the same risk as classical genotypes; there are arguments for abandoning general fasting-avoidance advice in those with >10% residual activity.',
+            'c.985A>G (p.Lys329Glu) homozygotes have the highest C8 NBS values and are most likely to have neonatal symptoms. In Anderson 2020, homozygotes had higher NBS C8, higher transaminases, and more hypoglycemic events than compound heterozygotes — though the event difference was not statistically significant.',
+            'c.199T>C (p.Tyr67His) has ~6% allele frequency in MCAD-deficient newborns and is associated with some residual enzyme activity; homozygotes are probably not at risk for disease.',
+            'c.600-18G>A: individuals compound heterozygous for this and c.985A>G have a mild phenotype and may be missed by NBS.',
+            'Despite these correlations, a clear genotype-phenotype correlation does not exist, and environmental factors (diet, stress, intercurrent illness) are critical in determining the natural history (GeneReviews).',
           ],
         },
       ],
@@ -425,13 +545,22 @@ export const understanding: Topic = {
           url: 'https://pubmed.ncbi.nlm.nih.gov/31836396',
           pmid: '31836396',
         },
+        {
+          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
+          url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
+          pmid: '20301597',
+        },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
       ],
     },
     {
       slug: 'clinical-presentation',
       title: 'Signs and symptoms',
       summary:
-        'Symptoms usually appear in infancy or early childhood and can include vomiting, lethargy, low blood sugar, seizures, breathing problems, liver problems, and in severe cases coma or sudden death. In rare cases, diagnosis is delayed until adulthood.',
+        'Symptoms usually appear in infancy or early childhood — typically between 3 and 24 months of age — and can include vomiting, lethargy, low blood sugar, seizures, breathing problems, liver problems, and in severe cases coma or sudden death. Many affected people remain symptom-free throughout life.',
       body: [
         {
           type: 'p',
@@ -455,6 +584,23 @@ export const understanding: Topic = {
           type: 'p',
           text: 'In rare cases, symptoms are not recognized early in life and the condition is not diagnosed until adulthood.',
         },
+        {
+          type: 'p',
+          text: 'Additional clinical details from newer sources:',
+        },
+        {
+          type: 'ul',
+          items: [
+            'Age of onset (Orphanet): MCADD typically manifests 3 to 24 months after birth in previously healthy infants; neonatal and adult forms also occur. Many affected individuals remain asymptomatic throughout life.',
+            'During crises patients may exhibit lethargy, vomiting, respiratory arrest, seizures, hepatomegaly, and rapid progression to cardiac arrest without emergency treatment (Orphanet).',
+            'Pre-diagnosis mortality: historically, about 25% of undiagnosed patients died during their first metabolic crisis (Orphanet); GeneReviews cites 18%–25% for the same historical figure (Iafolla 1994).',
+            'Iafolla 1994: in a cohort of 120 referred patients, 23 (19%) died before diagnosis; among survivors, unexpected morbidity included developmental and behavioral disability, chronic muscle weakness, failure to thrive, and cerebral palsy.',
+            'Adult presentation (Lang 2009): a review of 14 cases identified in adulthood found mortality of 50% in acutely presenting adults and 29% in total, typically precipitated by fasting or alcohol.',
+            'Neurologic and muscular sequelae (GeneReviews): uncontrolled decompensation can lead to loss of developmental milestones, aphasia, ADHD, and chronic myopathy.',
+            'MCADD is a known cause of sudden infant death syndrome (SIDS); newborn screening has reduced neonatal mortality to 0.6%–2.4% in screened populations (GeneReviews).',
+            'Growth (Anderson 2020): children with MCADD had normal growth; no irreversible complications were observed after diagnosis in any patient.',
+          ],
+        },
       ],
       category: ['ESTABLISHED FACT'],
       evidence: { level: 'A' },
@@ -477,6 +623,48 @@ export const understanding: Topic = {
           text: 'Lang TF. "Adult presentations of medium-chain acyl-CoA dehydrogenase deficiency (MCADD)." J Inherit Metab Dis. 2009;32:675-83.',
           url: 'https://pubmed.ncbi.nlm.nih.gov/19821147',
           pmid: '19821147',
+        },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
+        {
+          text: 'Anderson DR, et al. Mol Genet Metab. 2020;129:13-9.',
+          pmid: '31836396',
+        },
+      ],
+    },
+    {
+      slug: 'prognosis',
+      title: 'Prognosis',
+      summary:
+        'With diagnosis, fasting avoidance, and proper management during illness, the outlook for MCADD is favorable. Newborn screening greatly reduces morbidity and mortality.',
+      body: [
+        {
+          type: 'p',
+          text: 'Prognosis is favorable in diagnosed patients who avoid fasting and are managed appropriately during intercurrent illness or metabolic crisis (Orphanet, ORPHA:42).',
+        },
+        {
+          type: 'p',
+          text: 'Newborn screening provides the opportunity to reduce morbidity and post-neonatal mortality in all patients with MCADD, regardless of genotype (Anderson 2020). No irreversible complications were observed after diagnosis in any patient in that 90-patient cohort. Individuals identified and treated presymptomatically are protected from metabolic decompensations and relevant sequelae (GeneReviews).',
+        },
+      ],
+      category: ['ESTABLISHED FACT'],
+      evidence: { level: 'A' },
+      lastVerified: '2026-08-21',
+      sources: [
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
+        {
+          text: 'Anderson DR, et al. Mol Genet Metab. 2020;129:13-9.',
+          pmid: '31836396',
+        },
+        {
+          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
+          url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
+          pmid: '20301597',
         },
       ],
     },

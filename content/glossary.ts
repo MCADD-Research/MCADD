@@ -36,7 +36,7 @@ export const glossary: GlossaryTerm[] = [
     term: 'K304E',
     abbreviation: 'c.985A>G',
     definition:
-      'The most common disease-causing MCADD mutation, replacing lysine with glutamic acid at position 304 in the MCAD enzyme. It is subject to a strong founder effect from northwestern Europe.',
+      'The most common disease-causing MCADD mutation, replacing lysine with glutamic acid at position 304 in the MCAD enzyme (current HGVS nomenclature: p.Lys329Glu / K329E). It is subject to a strong founder effect from northwestern Europe.',
     category: 'genetics',
   },
   {
@@ -149,7 +149,7 @@ export const glossary: GlossaryTerm[] = [
     term: 'MCTs',
     abbreviation: 'Medium-chain triglycerides',
     definition:
-      'Fats composed of medium-chain fatty acids (C6\u2013C12), found in coconut oil, palm kernel oil, and some supplements. Their restriction in MCADD is not clearly established.',
+      'Fats composed of medium-chain fatty acids (C6\u2013C12), found in coconut oil, palm kernel oil, and some supplements. Orphanet (a Tier A source) recommends they should be avoided in MCADD.',
     category: 'management',
   },
   {

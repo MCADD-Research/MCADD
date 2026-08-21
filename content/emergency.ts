@@ -82,6 +82,55 @@ export const emergency: Topic = {
       ],
     },
     {
+      slug: 'mortality-data',
+      title: 'Mortality data (historical)',
+      summary:
+        'Untreated MCADD can be rapidly fatal. Historical, largely pre-newborn-screening data put pre-diagnosis mortality around 19–25% in children and up to 50% in adults presenting acutely.',
+      body: [
+        {
+          type: 'p',
+          text: 'MCADD metabolic decompensation can be rapidly fatal when not treated urgently. Historical (largely pre-newborn-screening) data quantify this risk:',
+        },
+        {
+          type: 'ul',
+          items: [
+            'Iafolla 1994 (PMID 8120710): in a cohort of 120 affected children, 19% died before diagnosis was made.',
+            'Lang 2009 (PMID 19821147): in adults presenting acutely, mortality was 50% (29% overall in that case series). Adult decompensation is typically precipitated by fasting or alcohol consumption.',
+            'Orphanet: historically, approximately 25% of undiagnosed patients die during their first metabolic crisis.',
+          ],
+        },
+        {
+          type: 'callout',
+          variant: 'warning',
+          title: 'Context',
+          text: 'These figures reflect undiagnosed or untreated patients, primarily before widespread newborn screening. Newborn screening and prompt emergency management have substantially reduced mortality in diagnosed patients.',
+        },
+      ],
+      category: ['ESTABLISHED FACT'],
+      evidence: { level: 'B' },
+      lastVerified: '2026-08-21',
+      sources: [
+        {
+          text: 'Iafolla AK, et al. J Pediatr. 1994;124:409-15.',
+          pmid: '8120710',
+        },
+        {
+          text: 'Lang TF. J Inherit Metab Dis. 2009;32:675-83.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/19821147',
+          pmid: '19821147',
+        },
+        {
+          text: 'Orphanet. MCAD deficiency (ORPHA:42).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
+        {
+          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
+          url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
+          pmid: '20301597',
+        },
+      ],
+    },
+    {
       slug: 'vomiting',
       title: 'Vomiting',
       summary:
@@ -275,7 +324,7 @@ export const emergency: Topic = {
         },
         {
           type: 'p',
-          text: 'All infections (viral, bacterial) can trigger decompensation. Management requires attention to both the infection itself and metabolic support.',
+          text: 'All infections (viral, bacterial) can trigger decompensation. Management requires attention to both the infection itself and metabolic support. During intercurrent infections, an emergency dietary regimen must be available (Orphanet).',
         },
       ],
       category: ['ESTABLISHED FACT', 'MEDICAL RECOMMENDATION'],
@@ -294,6 +343,10 @@ export const emergency: Topic = {
         {
           text: 'Iafolla AK, et al. J Pediatr. 1994;124:409-15.',
           pmid: '8120710',
+        },
+        {
+          text: 'Orphanet. MCAD deficiency (ORPHA:42).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
         },
       ],
     },
@@ -406,6 +459,10 @@ export const emergency: Topic = {
           text: 'Hypoglycemia in MCADD is characteristically hypoketotic — blood glucose is low AND ketone bodies are inappropriately low, distinguishing it from hypoglycemia in other conditions where ketones may be elevated.',
         },
         {
+          type: 'p',
+          text: 'Management: in symptomatic patients, simple carbohydrates are administered orally (glucose tablets) or intravenously, until glycemia is maintained above 5 mmol/L (Orphanet).',
+        },
+        {
           type: 'callout',
           variant: 'warning',
           title: 'Treatment is individualized',
@@ -430,6 +487,10 @@ export const emergency: Topic = {
           url: 'https://pubmed.ncbi.nlm.nih.gov/33372121',
           pmid: '33372121',
         },
+        {
+          text: 'Orphanet. MCAD deficiency (ORPHA:42).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
       ],
     },
     {
@@ -453,6 +514,10 @@ export const emergency: Topic = {
           ],
         },
         {
+          type: 'p',
+          text: 'McGregor TL, et al. (2021, Pediatrics) is an AAP Council on Genetics clinical report providing management principles for acute illness in MCADD, intended for pediatricians as primary care providers — emphasizing that although each patient has a primary metabolic physician, involvement of the primary care provider is crucial. Emergency medical treatment is necessary in cases of metabolic decompensation (Orphanet).',
+        },
+        {
           type: 'callout',
           variant: 'insufficient',
           title: 'Insufficiently documented',
@@ -473,31 +538,48 @@ export const emergency: Topic = {
           url: 'https://pubmed.ncbi.nlm.nih.gov/33372121',
           pmid: '33372121',
         },
+        {
+          text: 'Orphanet. MCAD deficiency (ORPHA:42).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
       ],
     },
     {
       slug: 'glucose-glucagon',
       title: 'Glucose and glucagon',
       summary:
-        'The exact role of glucagon and specific glucose protocols could not be verified from primary sources. These details must come from your metabolic team.',
+        'The glucose target is documented: in symptomatic patients, give simple carbohydrates by mouth or IV until glycemia stays above 5 mmol/L. The role of glucagon is not well documented and comes from the metabolic team.',
       body: [
+        {
+          type: 'p',
+          text: 'Glucose administration (verified): in symptomatic patients, simple carbohydrates are administered orally (glucose tablets) or intravenously, until glycemia is maintained above 5 mmol/L (Orphanet). GeneReviews similarly recommends simple carbohydrates by mouth (glucose tablets or sweetened, non-diet beverages) or IV fluids to reverse catabolism and prevent hypoglycemia.',
+        },
+        {
+          type: 'p',
+          text: 'Glucagon: the specific role of glucagon in MCADD emergency management remains insufficiently documented from primary sources in this research pass.',
+        },
         {
           type: 'callout',
           variant: 'insufficient',
           title: 'Insufficiently documented',
-          text: 'The specific role of glucagon in MCADD emergency management and specific glucose administration protocols could not be fully verified from primary sources in this research pass. These details must come from the patient\u2019s metabolic team.',
-        },
-        {
-          type: 'p',
-          text: 'This site does not: invent glucose doses, IV concentrations, infusion rates, medication doses, or hospital protocols.',
+          text: 'Specific glucose doses, IV concentrations, and infusion rates must come from the patient\u2019s individualized plan created by their metabolic physician. This site does not invent glucose doses, IV concentrations, infusion rates, medication doses, or hospital protocols.',
         },
       ],
-      category: ['INSUFFICIENTLY DOCUMENTED DATA'],
-      evidence: { level: 'X' },
+      category: ['MEDICAL RECOMMENDATION', 'INSUFFICIENTLY DOCUMENTED DATA'],
+      evidence: { level: 'B' },
       lastVerified: '2026-08-21',
       sources: [
         {
-          text: 'McGregor TL, et al. Pediatrics. 2021;147:e2020040303. (General reference — specific protocols require individualized plan)',
+          text: 'Orphanet. MCAD deficiency (ORPHA:42).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
+        {
+          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
+          url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
+          pmid: '20301597',
+        },
+        {
+          text: 'McGregor TL, et al. Pediatrics. 2021;147:e2020040303.',
           url: 'https://pubmed.ncbi.nlm.nih.gov/33372121',
           pmid: '33372121',
         },

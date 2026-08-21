@@ -8,7 +8,6 @@ import { primaryNav, secondaryNav, site } from '~/content/site'
       <div class="footer-grid">
         <div class="footer-brand">
           <p class="footer-name">{{ site.name }}</p>
-          <p class="footer-tagline">{{ site.tagline }}</p>
           <p class="footer-note">
             An independent educational resource for people living with MCADD. All medical content is traced to published,
             cited sources.
@@ -72,14 +71,6 @@ import { primaryNav, secondaryNav, site } from '~/content/site'
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0 0 0.25rem;
-}
-.footer-tagline {
-  color: var(--brand-700);
-  font-weight: 600;
-  margin: 0 0 0.75rem;
-}
-[data-theme='dark'] .footer-tagline {
-  color: var(--brand-300);
 }
 .footer-note {
   color: var(--text-muted);

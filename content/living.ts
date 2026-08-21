@@ -42,7 +42,7 @@ export const living: Topic = {
       slug: 'fasting-duration',
       title: 'How long is safe to fast?',
       summary:
-        'Safe fasting limits differ by age and by the individual, and they are worked out with the metabolic team. Exact age-specific numbers are not reproduced here because they must come from a reliable, individualized source.',
+        'Age-specific safe fasting limits are documented from the Derks 2007 study: 8 hours (6 months–1 year), 10 hours (second year of life), and 12 hours (after the second year). These apply to well children; fasting must be minimized during illness.',
       body: [
         {
           type: 'callout',
@@ -52,42 +52,51 @@ export const living: Topic = {
         },
         {
           type: 'p',
-          text: 'A key reference for fasting duration is:',
+          text: 'A key reference for fasting duration is Derks et al. (2007), which examined fasting tolerance in 35 fasting tests in Dutch MCAD-deficient patients. Age-specific recommended maximum fasting limits are:',
         },
         {
-          type: 'ul',
+          type: 'kv',
           items: [
-            'Derks TG, Van Spronsen FJ, Rake JP, Van Der Hilst CS, Span MM, Smit GP. "Safe and unsafe duration of fasting for children with MCAD deficiency." Eur J Pediatr. 2007;166:5-11.',
+            { k: '6 months – 1 year', v: '8 hours maximum' },
+            { k: 'Second year of life', v: '10 hours maximum' },
+            { k: 'After the second year', v: '12 hours maximum' },
           ],
         },
         {
           type: 'p',
-          text: 'This study provides age-specific fasting safety limits for children with MCADD. However, the specific values from this study require verification against the original publication, which could not be fully accessed in this research pass.',
-        },
-        {
-          type: 'p',
-          text: 'GeneReviews provides general guidance on avoiding fasting, particularly in infants and young children. The specific recommendations include:',
+          text: 'Important findings from Derks 2007:',
         },
         {
           type: 'ul',
           items: [
-            'Infants: frequent feedings (every 3-4 hours typically).',
-            'Toddlers: avoid fasting beyond a limited number of hours (specific limits in GeneReviews).',
-            'Children: must not skip meals.',
-            'During illness: urgent attention to maintain caloric intake.',
+            'In 6 out of 35 fasting tests, symptoms were reported before hypoglycemia was observed — symptoms can precede biochemical hypoglycemia.',
+            'There is considerable inter-individual variation and overlap between safe and unsafe durations.',
+            'No conclusions can be drawn on fasting duration during intercurrent illness, especially with fever — the limits above apply to well children only.',
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Risk stratification by residual enzyme activity (Touw 2012):',
+        },
+        {
+          type: 'ul',
+          items: [
+            'Residual activity <10%: same risk as the classical genotype — full fasting precautions apply.',
+            'Residual activity >10% (variant genotypes): arguments exist for abandoning the general advice to avoid prolonged fasting.',
+            'The effect of intercurrent illness on residual enzyme activity remains uncertain — fasting precautions should still be maintained during illness regardless of genotype.',
           ],
         },
         {
           type: 'callout',
-          variant: 'insufficient',
-          title: 'Insufficiently documented',
-          text: 'The exact fasting duration limits for each age group could not be independently verified from the primary source (Derks 2007) in this research pass. The specific numeric values from different sources must not be merged. Families should consult their metabolic team for individualized fasting limits.',
+          variant: 'warning',
+          title: 'Individualized limits',
+          text: 'These limits apply to well children in controlled conditions. During intercurrent illness (especially with fever), fasting must be minimized regardless of age or genotype. Families should consult their metabolic team for individualized fasting limits.',
         },
       ],
       category: ['MEDICAL RECOMMENDATION'],
       evidence: {
-        level: 'B',
-        note: 'Recommendations exist from authoritative sources; specific numeric values require primary-source verification.',
+        level: 'C',
+        note: 'Observational cohort data from single-center studies.',
       },
       lastVerified: '2026-08-21',
       sources: [
@@ -97,9 +106,18 @@ export const living: Topic = {
           pmid: '16788829',
         },
         {
+          text: 'Touw CM, et al. "Risk stratification by residual enzyme activity after newborn screening for MCAD deficiency." Orphanet J Rare Dis. 2012;7:30.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/22630369',
+          pmid: '22630369',
+        },
+        {
           text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
           pmid: '20301597',
+        },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
         },
       ],
     },
@@ -126,15 +144,19 @@ export const living: Topic = {
         },
         {
           type: 'callout',
-          variant: 'insufficient',
-          title: 'Insufficiently documented',
-          text: 'Specific macronutrient ratios for MCADD management have not been verified from primary sources in this research pass. The general guidance is that a normal balanced diet with attention to regular meals and avoiding fasting is appropriate.',
+          variant: 'info',
+          title: 'No special diet required',
+          text: 'Orphanet states that no dietary restriction other than MCT avoidance is required. The general recommendation is a normal balanced diet with attention to regular meals and avoiding fasting (Orphanet, ORPHA:42; GeneReviews).',
         },
       ],
       category: ['MEDICAL RECOMMENDATION'],
-      evidence: { level: 'B' },
+      evidence: { level: 'A' },
       lastVerified: '2026-08-21',
       sources: [
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
         {
           text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
@@ -227,17 +249,11 @@ export const living: Topic = {
       slug: 'sleep',
       title: 'Sleep and overnight fasting',
       summary:
-        'Avoiding long overnight fasts is important. For infants and young children this means night feeds; for older children and adults, a late evening snack may help prevent overnight low blood sugar.',
+        'Avoiding long overnight fasts is important. The Derks 2007 fasting limits (8h for 6 months–1 year, 10h for the second year, 12h thereafter) apply to overnight sleep; a late evening snack may help prevent overnight low blood sugar.',
       body: [
         {
           type: 'p',
-          text: 'Avoiding prolonged overnight fasting is important. Infants and young children should not sleep through the night without feeding beyond the safe fasting duration for their age. For older children and adults, a late evening snack or cornstarch supplementation may be recommended to prevent overnight hypoglycemia.',
-        },
-        {
-          type: 'callout',
-          variant: 'insufficient',
-          title: 'Insufficiently documented',
-          text: 'Specific overnight fasting limits and cornstarch dosing recommendations could not be verified from primary sources in this research pass.',
+          text: 'Avoiding prolonged overnight fasting is important. The Derks 2007 fasting limits (8 hours for 6 months–1 year, 10 hours for the second year of life, 12 hours thereafter) apply to overnight sleep. A late evening snack may be recommended to prevent overnight hypoglycemia. Cornstarch supplementation may be used in some patients, but specific dosing should be determined by the metabolic team.',
         },
       ],
       category: ['MEDICAL RECOMMENDATION'],
@@ -245,9 +261,18 @@ export const living: Topic = {
       lastVerified: '2026-08-21',
       sources: [
         {
+          text: 'Derks TG, et al. Eur J Pediatr. 2007;166:5-11.',
+          url: 'https://pubmed.ncbi.nlm.nih.gov/16788829',
+          pmid: '16788829',
+        },
+        {
           text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
           pmid: '20301597',
+        },
+        {
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
         },
       ],
     },
@@ -318,7 +343,7 @@ export const living: Topic = {
       slug: 'mct',
       title: 'MCTs (medium-chain triglycerides)',
       summary:
-        'There is a common belief that MCTs are harmful in MCADD, but the evidence for a blanket rule is not well established. This is an area of genuine uncertainty, so advice should come from your metabolic team.',
+        'MCTs are fats metabolized through the same pathway that is deficient in MCADD. Orphanet (a Tier A authoritative source) recommends that MCTs should be avoided, alongside the primary aim of preventing fasting.',
       body: [
         { type: 'h3', text: 'What are MCTs?' },
         {
@@ -330,33 +355,44 @@ export const living: Topic = {
           type: 'p',
           text: 'Historically, there has been concern that MCTs may be dangerous for individuals with MCADD because they are metabolized through the same pathway that is deficient (medium-chain fatty acid \u03b2-oxidation).',
         },
+        { type: 'h3', text: 'Orphanet recommendation on MCT' },
         {
           type: 'p',
-          text: 'However, the evidence base for blanket MCT restriction in MCADD is not well-established from the sources verified in this research pass. Some sources recommend caution with MCT intake; others suggest that small amounts may be tolerated.',
+          text: 'Orphanet (ORPHA:42), an authoritative Tier A source, explicitly states: "Les triglycérides à chaîne moyenne doivent aussi être évités" (medium-chain triglycerides should also be avoided). This recommendation comes from the Orphanet clinical summary for MCADD (last updated February 2014).',
         },
-        { type: 'h3', text: 'Is MCT "forbidden"?' },
         {
-          type: 'callout',
-          variant: 'insufficient',
-          title: 'Insufficiently documented',
-          text: 'No authoritative source verified in this research pass explicitly states "MCT is forbidden" for all MCADD patients in all contexts. The evidence for and against MCT restriction requires further investigation with primary-source verification.',
+          type: 'p',
+          text: 'Other dietary considerations from Orphanet:',
+        },
+        {
+          type: 'ul',
+          items: [
+            'Artificial sweeteners should be avoided.',
+            'Low-dose carnitine in patients with low carnitine levels is controversial (no consensus).',
+            'Symptomatic patients: simple carbohydrates administered orally (glucose tablets) or intravenously until glycemia is maintained above 5 mmol/L.',
+            'No other dietary restriction is required beyond MCT avoidance and fasting prevention.',
+          ],
         },
         {
           type: 'callout',
           variant: 'warning',
-          title: 'Do not overstate',
-          text: 'Do not state "MCT is forbidden" unless an authoritative source explicitly supports that exact recommendation in the relevant context.',
+          title: 'Context and limitations',
+          text: 'The Orphanet recommendation dates from February 2014 and may reflect practices that have since evolved. It does not distinguish between MCT oil supplements and trace MCT in foods. Families should discuss MCT avoidance specifics with their metabolic team.',
         },
       ],
-      category: ['OBSERVATIONAL DATA', 'INSUFFICIENTLY DOCUMENTED DATA'],
+      category: ['MEDICAL RECOMMENDATION'],
       evidence: {
-        level: 'X',
-        note: 'Insufficient evidence to make a blanket recommendation.',
+        level: 'A',
+        note: 'Authoritative source recommendation (Orphanet).',
       },
       lastVerified: '2026-08-21',
       sources: [
         {
-          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024]. (General reference — specific MCT guidance requires further verification.)',
+          text: 'Orphanet. ORPHA:42 (Tier A; summary last updated February 2014).',
+          url: 'https://www.orpha.net/fr/disease/detail/42',
+        },
+        {
+          text: 'Chang IJ, Lam C, Vockley J. GeneReviews. 2000 [updated 2024].',
           url: 'https://www.ncbi.nlm.nih.gov/books/NBK1424/',
           pmid: '20301597',
         },

@@ -4,7 +4,7 @@ import { glossary, type GlossaryTerm } from '~/content/glossary'
 usePageSeo({
   title: 'Glossary',
   description:
-    'Plain-language definitions of the terms used across the MCADD Compass guide, from ACADM to triheptanoin.',
+    'Plain-language definitions of the terms used across this MCADD guide, from ACADM to triheptanoin.',
 })
 
 const categories: { key: GlossaryTerm['category']; label: string }[] = [

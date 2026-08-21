@@ -10,9 +10,7 @@ interface SeoOptions {
 export function usePageSeo(options: SeoOptions = {}) {
   const route = useRoute()
 
-  const title = options.title
-    ? `${options.title} · ${site.name}`
-    : `${site.name} — ${site.tagline}`
+  const title = options.title ? `${options.title} · ${site.name}` : site.name
   const description = options.description || site.description
   const url = `${site.siteUrl}${route.path}`
 

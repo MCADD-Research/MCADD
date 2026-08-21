@@ -1,8 +1,8 @@
-# MCADD Compass
+# MCADD
 
 An evidence-based public website about **medium-chain acyl-CoA dehydrogenase deficiency (MCADD)** — built with [Nuxt 3](https://nuxt.com) and deployed as a static site to GitHub Pages.
 
-> **Easy to understand, never simplistic.** A newly diagnosed teenager can grasp the basics in 30 seconds, while an experienced patient can dive into ACADM, MCAD, fatty-acid β-oxidation, C8, genetics, pathophysiology, and emerging therapies.
+> An evidence-based guide to MCADD — from the basics to the biochemistry: ACADM, MCAD, fatty-acid β-oxidation, C8, genetics, pathophysiology, and emerging therapies.
 
 ## Content source
 

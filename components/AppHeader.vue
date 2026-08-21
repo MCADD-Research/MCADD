@@ -22,7 +22,7 @@ watch(
 <template>
   <header class="header">
     <div class="container header-inner">
-      <NuxtLink to="/" class="brand" aria-label="MCADD Compass — home" @click="close">
+      <NuxtLink to="/" class="brand" aria-label="MCADD — home" @click="close">
         <span class="brand-mark" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="9" />
@@ -32,7 +32,6 @@ watch(
         </span>
         <span class="brand-text">
           <span class="brand-name">{{ site.name }}</span>
-          <span class="brand-tagline">MCADD knowledge, evidence-based</span>
         </span>
       </NuxtLink>
 
@@ -140,11 +139,6 @@ watch(
   font-weight: 600;
   font-size: 1.15rem;
   letter-spacing: -0.01em;
-}
-.brand-tagline {
-  font-size: 0.7rem;
-  color: var(--text-faint);
-  letter-spacing: 0.02em;
 }
 .nav {
   display: flex;

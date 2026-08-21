@@ -112,10 +112,10 @@ export const sourcesConsulted: SourceEntry[] = [
   },
   {
     name: 'Orphanet — MCADD',
-    url: 'https://www.orpha.net/en/disease/734',
+    url: 'https://www.orpha.net/fr/disease/detail/42',
     tier: 'A',
-    accessed: false,
-    note: 'Blocked by CAPTCHA/bot detection. Not accessed.',
+    accessed: true,
+    note: 'Full clinical summary retrieved via browser. Last updated February 2014. ORPHA:42.',
   },
   {
     name: 'CDC — Newborn screening',
@@ -127,35 +127,29 @@ export const sourcesConsulted: SourceEntry[] = [
   {
     name: 'PubMed (direct)',
     tier: 'B',
-    accessed: false,
-    note: 'Direct access blocked (no content returned). References obtained via GeneReviews bibliography.',
+    accessed: true,
+    note: '7 key abstracts extracted via browser (Derks 2007, McGregor 2021, Touw 2012, Iafolla 1994, Anderson 2020, Bentler 2016, Lang 2009).',
   },
   {
     name: 'ClinicalTrials.gov API',
     url: 'https://clinicaltrials.gov/api/v2/studies',
     tier: 'C',
     accessed: true,
-    note: 'Full access. 14 studies found, 7 MCADD-specific.',
+    note: 'Full access. 14 studies found, 9 MCADD-specific.',
   },
   {
     name: 'EU CTIS',
-    url: 'https://euclinicaltrials.eu/',
+    url: 'https://euclinicaltrials.eu/ctis-public/search',
     tier: 'C',
-    accessed: false,
-    note: 'Not searched — access limitation.',
+    accessed: true,
+    note: 'Searched via browser. 0 MCADD-specific trials. 1 related LC-FAOD trial (not MCADD).',
   },
   {
     name: 'WHO ICTRP',
-    url: 'https://www.who.int/clinical-trials-registry',
+    url: 'https://trialsearch.who.int/',
     tier: 'C',
-    accessed: false,
-    note: 'Not searched — access limitation.',
-  },
-  {
-    name: 'DuckDuckGo (web search)',
-    tier: 'D',
-    accessed: false,
-    note: 'Bot detection blocked all searches.',
+    accessed: true,
+    note: 'Searched via browser. 10 MCADD-specific trials, including 2 not on ClinicalTrials.gov (DRKS00032765, ISRCTN14321657).',
   },
 ]
 
@@ -171,53 +165,60 @@ export const conflicts: Conflict[] = [
   {
     id: 1,
     title: 'MCT restriction',
-    status: 'INSUFFICIENT EVIDENCE',
+    status: 'RESOLVED',
     description:
-      'Whether MCT is "forbidden" in MCADD could not be verified. The sources accessed (GeneReviews, MedlinePlus) do not explicitly state "MCT is forbidden" in the retrieved content.',
+      'Whether MCT should be restricted in MCADD was initially unverified. Orphanet (ORPHA:42, Tier A) explicitly states "Les triglycérides à chaîne moyenne doivent aussi être évités" (MCT should also be avoided).',
     resolution:
-      'Marked as INSUFFICIENTLY DOCUMENTED DATA. No blanket recommendation made. Further primary-source research needed.',
+      'Resolved. Orphanet (Tier A) recommends avoiding MCT. Evidence level upgraded from X to A.',
   },
   {
     id: 2,
     title: 'Specific fasting duration limits',
-    status: 'INSUFFICIENT EVIDENCE',
+    status: 'RESOLVED',
     description:
-      'The Derks 2007 study (PMID: 16788829) provides age-specific fasting limits, but the full text could not be accessed to verify specific numeric values.',
+      'The Derks 2007 study (PMID: 16788829) provides age-specific fasting limits (8h for 6 months–1 year, 10h for the second year, 12h thereafter).',
     resolution:
-      'Marked as INSUFFICIENTLY DOCUMENTED DATA. No specific numeric fasting limits provided. Families directed to consult their metabolic team.',
+      'Resolved. Limits documented at evidence level C (observational cohort). Important caveat: no conclusions for intercurrent illness with fever.',
   },
   {
     id: 3,
     title: 'Genotype / phenotype correlation',
     status: 'PARTIALLY RESOLVED',
     description:
-      'Arnold et al. (2010, PMID: 20036593) found "lack of genotype-phenotype correlations" while Touw et al. (2012, PMID: 22630369) suggest residual enzyme activity may predict clinical severity.',
+      'Arnold et al. (2010, PMID: 20036593) found "lack of genotype-phenotype correlations" while Touw et al. (2012, PMID: 22630369) suggest residual enzyme activity may predict clinical severity. Anderson 2020 (PMID: 31836396) found p.Lys329Glu homozygotes had higher C8 and more hypoglycemic events.',
     resolution:
-      'Both positions documented. The evidence level is marked as C (limited). Both studies cited with appropriate context.',
+      'All three positions documented. Touw 2012 provides a nuanced view: residual enzyme activity <10% = classical risk; >10% may allow relaxed fasting advice. Evidence level C.',
   },
   {
     id: 4,
     title: 'NCT03761693 status',
     status: 'UNRESOLVED',
     description:
-      'Trial NCT03761693 (Fasting Tolerance in MCADD Infants) has status UNKNOWN on ClinicalTrials.gov, with last update 2019-05-14.',
-    resolution: 'Documented as UNKNOWN. Warning added not to assume active or recruiting status.',
+      'Trial NCT03761693 (Fasting Tolerance in MCADD Infants) shows status UNKNOWN on ClinicalTrials.gov (last update 2019-05-14), but WHO ICTRP last listed it as "Recruiting" (ICTRP record last refreshed 2020-12-12).',
+    resolution:
+      'Discrepancy documented. The ICTRP record is stale; current status treated as uncertain.',
+  },
+  {
+    id: 5,
+    title: 'Adult mortality rate',
+    status: 'DOCUMENTED',
+    description:
+      'Lang 2009 reports 50% mortality in acutely presenting adults and 29% overall. This is higher than the ~25% historical pediatric mortality (Orphanet/Iafolla 1994).',
+    resolution:
+      'Both figures documented with context. Adult presentations may be more severe due to delayed diagnosis and different triggers (alcohol).',
   },
 ]
 
 export const adversarialAudit = {
-  status: 'Manual review completed; automated adversarial review NOT performed',
+  status: 'Manual adversarial review completed (2026-08-21). Automated adversarial review not performed.',
   summary:
     'No critical safety issues found. The knowledge base consistently marks insufficient evidence, does not provide specific medical dosing, does not present experimental treatments as established, and includes source references for all medical claims.',
   keyLimitation:
-    'The adversarial review was not able to verify claims against primary source full texts (PubMed/PMC access was blocked). Claims are verified against authoritative secondary sources but not always against the primary studies themselves.',
+    'Claims were verified against authoritative sources and PubMed abstracts, but not always against the primary-study full texts. No identifiers (PMIDs, DOIs, URLs) were fabricated.',
   futureWork: [
-    'Access Derks 2007 full text to verify specific fasting duration limits.',
-    'Access McGregor 2021 full text to verify emergency management protocols.',
-    'Search Orphanet for MCADD clinical information.',
-    'Search EU CTIS and WHO ICTRP for additional trials.',
-    'Perform a full automated adversarial review when web access is available.',
-    'Verify MCT recommendation evidence from primary sources.',
-    'Access key PMC articles for full-text verification.',
+    'Access Derks 2007 and McGregor 2021 full texts to further verify fasting limits and emergency management protocols.',
+    'Perform a full automated adversarial review.',
+    'Monitor NCT03761693 and NCT01881984 for registry status changes.',
+    'Verify MCT recommendation consistency against evolving practice beyond the 2014 Orphanet summary.',
   ],
 }

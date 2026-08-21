@@ -56,7 +56,7 @@ const recruitingCount = computed(() => trials.filter((t) => t.status === 'RECRUI
       title="Research & clinical trials"
       description="The latest MCADD research, emerging therapies, and clinical trials — separated clearly into established knowledge, ongoing research, and experimental work."
       :intro="[
-        `Clinical trial data verified directly from ClinicalTrials.gov on ${researchLastVerified}.`,
+        `Clinical trial data verified from ClinicalTrials.gov, EU CTIS, and WHO ICTRP on ${researchLastVerified}.`,
         `${recruitingCount} MCADD-specific trial${recruitingCount === 1 ? ' is' : 's are'} currently recruiting.`,
         'Experimental therapies are clearly labelled and are never presented as established treatments.',
       ]"
@@ -86,8 +86,8 @@ const recruitingCount = computed(() => trials.filter((t) => t.status === 'RECRUI
       <div class="section-head">
         <h2 id="trials-title">MCADD-specific clinical trials</h2>
         <p class="section-sub">
-          All trials sourced from the ClinicalTrials.gov registry and independently verified on
-          {{ researchLastVerified }}.
+          All trials sourced from the ClinicalTrials.gov, EU CTIS, and WHO ICTRP registries and independently
+          verified on {{ researchLastVerified }}.
         </p>
       </div>
 
@@ -166,7 +166,7 @@ const recruitingCount = computed(() => trials.filter((t) => t.status === 'RECRUI
           </ul>
         </div>
         <aside class="registry-note callout callout-insufficient">
-          <strong>Registries not yet searched</strong>
+          <strong>Registry coverage</strong>
           <p>{{ registriesNote }}</p>
         </aside>
       </div>
